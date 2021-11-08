@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./style.css">
+ <title>CV</title>
+</head>
+<body>
+ <section>
+  <div class="holder">
+   <img src="./img/img.png" alt="">
+   <h1>Hi, I am Nemanja</h1>
+   <h3>Frontend developer</h3>
+  </div>
+  <div class="container">
+   <!-- bio -->
+   <div class="bio two">
+    <h2>About me</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quaerat labore! Magnam quam, ad porro suscipit expedita
+    praesentium illum tempore esse soluta sequi obcaecati commodi earum est ullam in sint laudantium corrupti, repellat
+    impedit dignissimos voluptatem labore architecto ipsum inventore.</p>
+
+    <h3>Ostla zanja i vestine</h3>
+     <p>Osnovi Jave, Bootstrap 4, Osnovi PHP, Jquery, Tailwind css, osnove Reakta, Mongodb, Node.js, Postman, Frigma, Sanity, MS OFFICE....</p>
+   </div>
+   <!-- end of bio -->
+   <!-- skills -->
+   <div class="mySkill two">
+    <h2>My Skills</h2>
+    <div class="html-holder">
+    <div class="skill">
+      <h4>HTML</h4>
+      <h5>75%</h5>
+    </div>
+     <div class="html"><span></span></div>
+    </div>
+    <div class="css-holder">
+     <div class="skill">
+      <h4>CSS</h4>
+      <h5>60%</h5>
+     </div>
+     <div class="css"><span></span></div>
+    </div>
+    <div class="js-holder">
+     <div class="skill">
+      <h4>JS</h4>
+      <h5>50%</h5>
+     </div>
+     <div class="js"><span></span></div>
+    </div>
+   </div>
+   <!-- end of skills -->
+   <!-- education -->
+   <div class="education">
+    <h2>Education</h2>
+    <h3>Osnovi jave</h3>
+    <p>RIS HUB UZICE 2021-present</p>
+    <h3>Web razvoj za apsolutne pocentike (HTML,CSS,JS)</h3>
+    <p>RIS HUB UZICE 2021</p>
+    <h3>FZNR</h3>
+    <p>NIŠ 2015-present</p>
+    <h3>THNIČKA ŠKOLA</h3>
+    <p> EKONOMSKI TEHNIČAR VLASOTINCE 2011-2015</p>
+   </div>
+   <!-- edn of education -->
+   <!-- language -->
+   <div class="language">
+    <h2>Language</h2>
+    <ul>
+     <li>English</li>
+    </ul>
+   </div>
+   <!-- end of language -->
+   <!-- contact -->
+   <div class="contact">
+    <h2>Contact</h2>
+  <div class="location">
+   <i class="fas fa-map-marker-alt"></i>
+   <span>Aleksandra Puskina 1 Vlasotince</span>
+  </div>
+  <div class="phone">
+   <i class="fas fa-phone-alt"></i>
+   <span>063219277</span>
+  </div>
+  <div class="mail">
+   <i class="fas fa-envelope"></i>
+   <a href="mailto:nemanja2014@live.com">nemanja2014@live.com</a>
+  </div>
+  <div class="portfolio">
+   <i class="fas fa-globe-europe"></i>
+   <a href="https://neckablog.netlify.app/">Portfolio</a>
+  </div>
+   </div>
+   <!-- end of contact -->
+   <!-- experiences -->
+   <div class="experiences">
+    <h2>AOI VISCOM OPERATER</h2>
+    <p>ELRAD SERBIA 2021-present</p>
+    <p>Automacka opticka kontrola elektronike, izrada programa za kontrolu elektronike, optimizacija programa.</p>
+   </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright &copy; <span id="date"></span> Nemanja Djordjevic</p>
+   <div class="icon"> 
+     <a href="https://www.facebook.com/GreenArrowSpectre"><i class="fab fa-facebook"></i></a>
+     <a href="https://www.instagram.com/necka96/"><i class="fab fa-instagram"></i></a>
+   </div>
+  </div>
+
+ </section>
+
+ <script src="https://kit.fontawesome.com/327342e6e1.js" crossorigin="anonymous"></script>
+<script>
+
+ const date = document.getElementById("date")
+ date.innerText = new Date().getFullYear()
+</script>
+</body>
+</html>
