@@ -9,26 +9,30 @@
 </head>
 <body>
  <section>
+    <div class="language-switch">
+      <a href="#srb" data-reload="">SRB</a>
+      <a href="#eng" data-reload="">ENG</a>
+    </div>
   <div class="holder">
    <img src="./img/img.png" alt="">
-   <h1>Hi, I am Nemanja</h1>
-   <h3>Frontend developer</h3>
+   <h1 id="hello">Pozdrav, ja sam Nemanja</h1>
+   <h3 id="job">Frontend programer</h3>
   </div>
   <div class="container">
    <!-- bio -->
    <div class="bio two">
-    <h2>About me</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quaerat labore! Magnam quam, ad porro suscipit expedita
-    praesentium illum tempore esse soluta sequi obcaecati commodi earum est ullam in sint laudantium corrupti, repellat
-    impedit dignissimos voluptatem labore architecto ipsum inventore.</p>
+    <h2 id="title">O meni :</h2>
+    <p id="description">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat non laborum illum vel voluptate, vero sit iste saepe tempora distinctio nemo. Voluptas, optio facilis beatae deserunt eius debitis explicabo eum, possimus dolorum quaerat repudiandae natus laudantium tempora eaque saepe sapiente.
+    </p>
 
-    <h3>Ostla zanja i vestine</h3>
-     <p>Osnovi Jave, Bootstrap 4, Osnovi PHP, Jquery, Tailwind css, osnove Reakta, Mongodb, Node.js, Postman, Frigma, Sanity, MS OFFICE....</p>
+    <h3 id="subtitle">Ostala znanja i veštine :</h3>
+     <p id="descriptionTwo">Instalacija operativnog sistema na racunaru; Zamena hardvera na racunaru; Osnove Jave; Osnove PHP; Jquery; osnove React; Wordpress; Sanity; Talwind css; Bootstrap 4; Mongodb; Node; Postman; Frigma; MS-Office paket; Atom; Bracketc; Visual Studio Code...</p>
    </div>
    <!-- end of bio -->
    <!-- skills -->
    <div class="mySkill two">
-    <h2>My Skills</h2>
+    <h2 id="titleTwo">Moje Veštine :</h2>
     <div class="html-holder">
     <div class="skill">
       <h4>HTML</h4>
@@ -54,28 +58,28 @@
    <!-- end of skills -->
    <!-- education -->
    <div class="education">
-    <h2>Education</h2>
-    <h3>Osnovi jave</h3>
+    <h2 id="titleTree">Obrazovanje :</h2>
+    <h3 id="subtitleTwo">Osnovi jave</h3>
     <p>RIS HUB UZICE 2021-present</p>
-    <h3>Web razvoj za apsolutne pocentike (HTML,CSS,JS)</h3>
+    <h3 id="subtitleTree">Web razvoj za apsolutne pocentike (HTML,CSS,JS)</h3>
     <p>RIS HUB UZICE 2021</p>
     <h3>FZNR</h3>
     <p>NIŠ 2015-present</p>
-    <h3>THNIČKA ŠKOLA</h3>
-    <p> EKONOMSKI TEHNIČAR VLASOTINCE 2011-2015</p>
+    <h3 id="subtitleFour">THNIČKA ŠKOLA VLASOTINCE</h3>
+    <p id="edDescription"> EKONOMSKI TEHNIČAR 2011-2015</p>
    </div>
    <!-- edn of education -->
    <!-- language -->
    <div class="language">
-    <h2>Language</h2>
+    <h2 id="titleFour">Jezik :</h2>
     <ul>
-     <li>English</li>
+     <li id="firstLang">Engleski</li>
     </ul>
    </div>
    <!-- end of language -->
    <!-- contact -->
    <div class="contact">
-    <h2>Contact</h2>
+    <h2 id="titleFive">Kontakt :</h2>
   <div class="location">
    <i class="fas fa-map-marker-alt"></i>
    <span>Aleksandra Puskina 1 Vlasotince</span>
@@ -96,9 +100,12 @@
    <!-- end of contact -->
    <!-- experiences -->
    <div class="experiences">
-    <h2>AOI VISCOM OPERATER</h2>
-    <p>ELRAD SERBIA 2021-present</p>
-    <p>Automacka opticka kontrola elektronike, izrada programa za kontrolu elektronike, optimizacija programa.</p>
+    <h2 id="titleSix">Iskustvo :</h2>
+  <div class="aoi">
+      <h3 id="subtitleFive">AOI VISCOM OPERATER</h3>
+      <p>ELRAD SERBIA 2021-present</p>
+      <p id="exDescription">Automacka opticka kontrola elektronike, izrada programa za kontrolu elektronike, optimizacija programa.</p>
+  </div>
    </div>
   </div>
   <div class="copyright">
@@ -113,9 +120,90 @@
 
  <script src="https://kit.fontawesome.com/327342e6e1.js" crossorigin="anonymous"></script>
 <script>
-
+// trenutna godina 
  const date = document.getElementById("date")
  date.innerText = new Date().getFullYear()
+// definisanje jezika - reload
+var dataReload = document.querySelectorAll("[data-reload]")
+
+//  prevod
+ var lanugage = {
+   eng:{
+     myName: "Hi, i am Nemanja",
+     myJob: "Frontend developer",
+     bioTitle: "About me :",
+     description: "",
+     firstSubtitle: "Other knowledge and skills :",
+     secondDesription: "Installing the operating system on the computer; Replacing hardware on the computer; Basics of Java; Basics of  PHP; Jquery; Basics of  React; Wordpress; Sanity; Talwind css; Bootstrap 4; Mongodb; Node; Postman; Frigma; MS-Office package; Atom; Bracketc; Visual Studio Code...",
+     skillTitle: "My Skills :",
+     educationTitle: "Education :",
+     educationSubtitleOne: "Basics of Java",
+     educationSubtitleTree: "Web development for absolute beginners (HTML, CSS, JS)",
+     educationSubtitleFour: "TECHNICAL SCHOOL VLASOTINCE",
+     educationDescription: "ECONOMIC TECHNICIAN 2011-2015 ",
+     languageTitle: "Language :",
+     languageOne: "English",
+     contactTitle: "Contact :",
+     experiencesTitle: "Experiences :",
+     experiencesSubtitle: "AOI VISCOM OPERATOR",
+     experiencesDescription: "Automated optical electronics control, development of electronics control programs, program optimization. "
+   },
+   srb:{
+    myName: "Pozdrav, ja sam Nemanja",
+    myJob: "Frontend programer",
+    bioTitle: "O meni :",
+    description: "",
+    firstSubtitle: "Ostala znanja i veštine :",
+    secondDesription: "Instalacija operativnog sistema na racunaru; Zamena hardvera na racunaru; Osnove Jave; Osnove PHP; Jquery; osnove React; Wordpress; Sanity; Talwind css; Bootstrap 4; Mongodb; Node; Postman; Frigma; MS-Office paket; Atom; Bracketc; Visual Studio Code...",
+    skillTitle: "Moje Veštine :",
+    educationTitle: "Obrazovanje :",
+    educationSubtitleOne: "Osnovi jave",
+    educationSubtitleTree: "Web razvoj za apsolutne pocentike (HTML,CSS,JS)",
+    educationSubtitleFour: "THNIČKA ŠKOLA VLASOTINCE",
+    educationDescription: "EKONOMSKI TEHNIČAR 2011-2015",
+    languageTitle: "Jezik :",
+    languageOne: "Engleski",
+    contactTitle: "Kontakt :",
+    experiencesTitle: "Iskustvo :",
+    experiencesSubtitle: "AOI VISCOM OPERATER",
+    experiencesDescription: "Automacka opticka kontrola elektronike, izrada programa za kontrolu elektronike, optimizacija programa."
+   }
+ }
+
+//  definisanje jezika 
+if(window.location.hash){
+  if(window.location.hash === "#eng"){
+    hello.textContent = lanugage.eng.myName
+    title.textContent = lanugage.eng.bioTitle
+    job.textContent = lanugage.eng.myJob
+    subtitle.textContent = lanugage.eng.firstSubtitle
+    descriptionTwo.textContent = lanugage.eng.secondDesription
+    titleTwo.textContent = lanugage.eng.skillTitle
+    titleTree.textContent= lanugage.eng.educationTitle
+    subtitleTwo.textContent = lanugage.eng.educationSubtitleOne
+    subtitleTree.textContent = lanugage.eng.educationSubtitleTree
+    subtitleFour.textContent = lanugage.eng.educationSubtitleFour
+    edDescription.textContent = lanugage.eng.educationDescription
+    titleFour.textContent = lanugage.eng.languageTitle
+    firstLang.textContent = lanugage.eng.languageOne
+    titleFive.textContent = lanugage.eng.contactTitle
+    titleSix.textContent = lanugage.eng.experiencesTitle
+    subtitleFive.textContent = lanugage.eng.experiencesSubtitle
+    exDescription.textContent = lanugage.eng.experiencesDescription
+  }
+}
+
+//  definisanje jezika - onklk iliteracija
+
+for(i = 0; i < dataReload.length; i++){
+  console.log(dataReload);
+  dataReload[i].onclick = function(){
+
+    setTimeout(function(){
+      location.reload()
+    }, 200)
+  }
+}
 </script>
 </body>
 </html>
