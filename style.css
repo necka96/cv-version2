@@ -60,8 +60,8 @@ h5 {
   display: grid;
   color: white;
 }
-.two {
-  grid-column: span 2;
+.three {
+  grid-column: span 3;
 }
 .html,
 .css,
@@ -100,14 +100,6 @@ h5 {
 }
 /* end of holder */
 
-/* bio */
-
-.bio:first-child p {
-  margin: 10px 0;
-}
-
-/* end of bio */
-
 /* skill */
 
 .skill {
@@ -136,6 +128,20 @@ h5 {
 }
 
 /* end of skill */
+
+/* bio */
+
+.bio p {
+  margin: 10px 0;
+}
+.bio #motto {
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* end of bio */
 
 /* education */
 
@@ -221,7 +227,7 @@ h5 {
   .container {
     grid-template-columns: repeat(auto-fit, minmax(90vw, auto));
   }
-  .two {
+  .three {
     grid-column: span 1;
   }
   .education {
@@ -241,7 +247,7 @@ h5 {
   .container {
     grid-template-columns: repeat(auto-fit, minmax(240px, 500px));
   }
-  .two {
+  .three {
     grid-column: span 1;
   }
   .education {
@@ -262,7 +268,7 @@ h5 {
   .container {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
-  .two {
+  .three {
     grid-column: span 1;
   }
   .education {

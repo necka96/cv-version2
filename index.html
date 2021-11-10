@@ -19,43 +19,47 @@
    <h3 id="job">Frontend programer</h3>
   </div>
   <div class="container">
+
+    <!-- skills -->
+    <div class="mySkill">
+      <h2 id="titleTwo">Moje Veštine :</h2>
+      <div class="html-holder">
+        <div class="skill">
+          <h4>HTML</h4>
+          <h5>75%</h5>
+        </div>
+        <div class="html"><span></span></div>
+      </div>
+      <div class="css-holder">
+        <div class="skill">
+          <h4>CSS</h4>
+          <h5>60%</h5>
+        </div>
+        <div class="css"><span></span></div>
+      </div>
+      <div class="js-holder">
+        <div class="skill">
+          <h4>JS</h4>
+          <h5>50%</h5>
+        </div>
+        <div class="js"><span></span></div>
+      </div>
+    </div>
+    <!-- end of skills -->
+
+
    <!-- bio -->
-   <div class="bio two">
+   <div class="bio three">
     <h2 id="title">O meni :</h2>
     <p id="description">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat non laborum illum vel voluptate, vero sit iste saepe tempora distinctio nemo. Voluptas, optio facilis beatae deserunt eius debitis explicabo eum, possimus dolorum quaerat repudiandae natus laudantium tempora eaque saepe sapiente.
+     Trenutno radim na poziciji AOI Viscom operatera u firmi Elrad Serbia koja se nalazi u mom rodnom gradu, u Vlasotincu, zavrsio sam prvu godinu fakluteta Zaštite na radu u Nišu, obuku web razvoj za apsolutne počentike gde smo učili html, css i js, zatim sam usavršavao ove i učio jos neke tehnologije.Trenutno pohađam obuku osnovi Jave. Kreativan sam, uporan, komunikativan, imam želju za sticanjem novih zanja i usavršavanje postojećih, spreman sam za rad u timu. Želja mi je da budem Full-Stack programer i zavrsim fakultet koji sam započeo. Moj životni moto je: 
     </p>
-
+    <p id="motto">Znanje mi niko ne može uzeti.</p>
     <h3 id="subtitle">Ostala znanja i veštine :</h3>
      <p id="descriptionTwo">Instalacija operativnog sistema na racunaru; Zamena hardvera na racunaru; Osnove Jave; Osnove PHP; Jquery; osnove React; Wordpress; Sanity; Talwind css; Bootstrap 4; Mongodb; Node; Postman; Frigma; MS-Office paket; Atom; Bracketc; Visual Studio Code...</p>
    </div>
    <!-- end of bio -->
-   <!-- skills -->
-   <div class="mySkill two">
-    <h2 id="titleTwo">Moje Veštine :</h2>
-    <div class="html-holder">
-    <div class="skill">
-      <h4>HTML</h4>
-      <h5>75%</h5>
-    </div>
-     <div class="html"><span></span></div>
-    </div>
-    <div class="css-holder">
-     <div class="skill">
-      <h4>CSS</h4>
-      <h5>60%</h5>
-     </div>
-     <div class="css"><span></span></div>
-    </div>
-    <div class="js-holder">
-     <div class="skill">
-      <h4>JS</h4>
-      <h5>50%</h5>
-     </div>
-     <div class="js"><span></span></div>
-    </div>
-   </div>
-   <!-- end of skills -->
+  
    <!-- education -->
    <div class="education">
     <h2 id="titleTree">Obrazovanje :</h2>
@@ -132,7 +136,8 @@ var dataReload = document.querySelectorAll("[data-reload]")
      myName: "Hi, i am Nemanja",
      myJob: "Frontend developer",
      bioTitle: "About me :",
-     description: "",
+     description: "I am currently working as an AOI Viscom operator in the company Elrad Serbia which is located in my hometown, in Vlasotince, I finished the first year of the Faculty of Occupational Safety in Nis, web development training for absolute beginners where we studied html, css and js, then I perfected these and learned some more technologies. I am currently attending Java basics training. I am creative, persistent, communicative, I have a desire to acquire new skills and improve existing ones, I am ready to work in a team. My desire is to be a Full-Stack developer and finish the college I started. My life motto is: ",
+     descriptionMotto:"No one can take my knowledge. ",
      firstSubtitle: "Other knowledge and skills :",
      secondDesription: "Installing the operating system on the computer; Replacing hardware on the computer; Basics of Java; Basics of  PHP; Jquery; Basics of  React; Wordpress; Sanity; Talwind css; Bootstrap 4; Mongodb; Node; Postman; Frigma; MS-Office package; Atom; Bracketc; Visual Studio Code...",
      skillTitle: "My Skills :",
@@ -152,7 +157,8 @@ var dataReload = document.querySelectorAll("[data-reload]")
     myName: "Pozdrav, ja sam Nemanja",
     myJob: "Frontend programer",
     bioTitle: "O meni :",
-    description: "",
+    description: "Trenutno radim na poziciji AOI Viscom operatera u firmi Elrad Serbia koja se nalazi u mom rodnom gradu, u Vlasotincu, zavrsio sam prvu godinu fakluteta Zaštite na radu u Nišu, obuku web razvoj za apsolutne počentike gde smo učili html, css i js, zatim sam usavršavao ove i učio jos neke tehnologije.Trenutno pohađam obuku osnovi Jave. Kreativan sam, uporan, komunikativan, imam želju za sticanjem novih zanja i usavršavanje postojećih, spreman sam za rad u timu. Želja mi je da budem Full-Stack programer i zavrsim fakultet koji sam započeo. Moj životni moto je:",
+    descriptionMotto: "Znanje mi niko ne može uzeti.",
     firstSubtitle: "Ostala znanja i veštine :",
     secondDesription: "Instalacija operativnog sistema na racunaru; Zamena hardvera na racunaru; Osnove Jave; Osnove PHP; Jquery; osnove React; Wordpress; Sanity; Talwind css; Bootstrap 4; Mongodb; Node; Postman; Frigma; MS-Office paket; Atom; Bracketc; Visual Studio Code...",
     skillTitle: "Moje Veštine :",
@@ -169,7 +175,6 @@ var dataReload = document.querySelectorAll("[data-reload]")
     experiencesDescription: "Automacka opticka kontrola elektronike, izrada programa za kontrolu elektronike, optimizacija programa."
    }
  }
-
 //  definisanje jezika 
 if(window.location.hash){
   if(window.location.hash === "#eng"){
@@ -177,6 +182,8 @@ if(window.location.hash){
     title.textContent = lanugage.eng.bioTitle
     job.textContent = lanugage.eng.myJob
     subtitle.textContent = lanugage.eng.firstSubtitle
+    description.textContent = lanugage.eng.description
+    motto.textContent = lanugage.eng.descriptionMotto
     descriptionTwo.textContent = lanugage.eng.secondDesription
     titleTwo.textContent = lanugage.eng.skillTitle
     titleTree.textContent= lanugage.eng.educationTitle
