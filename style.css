@@ -133,7 +133,9 @@ h5 {
 
 .bio p {
   margin: 10px 0;
+  text-align: justify;
 }
+
 .bio #motto {
   text-decoration: underline;
   font-style: italic;
