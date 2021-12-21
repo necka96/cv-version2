@@ -8,7 +8,9 @@
  <title>CV</title>
 </head>
 <body>
+  
  <section>
+   <canvas class="background"></canvas>
     <div class="language-switch">
       <a href="#srb" data-reload="">SRB</a>
       <a href="#eng" data-reload="">ENG</a>
@@ -111,6 +113,11 @@
       <p id="exDescription">Automacka opticka kontrola elektronike, izrada programa za kontrolu elektronike, optimizacija programa.</p>
   </div>
    </div>
+   <div class="recommendation">
+     <h2>Preporuka :</h2>
+     <p>Milan Josipovic - Fullstack programer, <br>
+       broj telefona: </p>
+   </div>
   </div>
   <div class="copyright">
     <p>Copyright &copy; <span id="date"></span> Nemanja Djordjevic</p>
@@ -121,9 +128,18 @@
   </div>
 
  </section>
-
+<script src="./particles.min.js"></script>
  <script src="https://kit.fontawesome.com/327342e6e1.js" crossorigin="anonymous"></script>
 <script>
+  // canvas
+  window.onload = function () {
+      Particles.init({
+        selector: '.background',
+        sizeVariations: 7,
+        connectParticles: true,
+        color: "#2176ff"
+      });
+    };
 // trenutna godina 
  const date = document.getElementById("date")
  date.innerText = new Date().getFullYear()
@@ -212,5 +228,6 @@ for(i = 0; i < dataReload.length; i++){
   }
 }
 </script>
+
 </body>
 </html>

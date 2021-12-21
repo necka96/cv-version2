@@ -5,14 +5,14 @@
   font-family: sans-serif;
 }
 /* global style */
-
-section {
-  width: 100%;
-  height: fit-content;
-  height: fit-content;
-  display: grid;
-  place-items: center;
-  position: relative;
+.background {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: -1;
   background: #ad5389; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -24,6 +24,14 @@ section {
     #ad5389,
     #3c1053
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+section {
+  width: 100%;
+  height: fit-content;
+  height: fit-content;
+  display: grid;
+  place-items: center;
+  position: relative;
 }
 section img {
   width: 150px;
@@ -54,7 +62,8 @@ h5 {
 }
 .mySkill,
 .education,
-.experiences {
+.experiences,
+.recommendation {
   background: #2176ff;
   padding: 1rem 2rem;
   display: grid;
@@ -196,6 +205,12 @@ h5 {
 }
 /* end of experiences */
 
+/* recommendation */
+.recommendation {
+  grid-area: 4 / 1 / 4 / 5;
+  text-align: center;
+}
+/* end of recommendation */
 /* copyright */
 
 .copyright {
@@ -244,6 +259,9 @@ h5 {
   .experiences {
     grid-area: 6 / 1 / 6 / 2;
   }
+  .recommendation {
+    grid-area: 7 / 1 / 7 / 2;
+  }
 }
 @media only screen and (min-width: 390px) and (max-width: 560px) {
   .container {
@@ -263,6 +281,9 @@ h5 {
   }
   .experiences {
     grid-area: 6 / 1 / 6 / 2;
+  }
+  .recommendation {
+    grid-area: 7 / 1 / 7 / 2;
   }
 }
 
@@ -284,6 +305,9 @@ h5 {
   }
   .experiences {
     grid-area: 6 / 1 / 6 / 2;
+  }
+  .recommendation {
+    grid-area: 7 / 1 / 7 / 2;
   }
 }
 
