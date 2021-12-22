@@ -114,9 +114,24 @@
   </div>
    </div>
    <div class="recommendation">
-     <h2>Preporuka :</h2>
-     <p>Milan Josipovic - Fullstack programer, <br>
-       broj telefona: </p>
+     <h2 id="recommendationTitle">Preporuka :</h2>
+     <h3 id="recommendationPerson">Milan Josipovic - Fullstack programer</h3>
+      <p id="recommendationParagraphOne">Nemanja Đorđević je uspešno završio kurs pod nazivom Osnove Web-a za Početnike koji je organizovan od strane
+      Regionalnog Inovacionog StartUp Centra iz Užica. Kurs je obuhvatao upoznavanje polaznika sa osnovnim tehnologijama : HTML, CSS i Javascript, kao i pratećim tehnologijama: Bootstrap, Git, host-ovanje sajta i praktičan rad na projektima sa stvarnim klijentima. Cilj je bio da polaznici steknu realna hands-on iskustva uz teoretsku podršku. 
+    </p>
+    <p id="recommendationParagraphTwo">Nemanja je pokazao inicijativu i istakao se tokom zajedničkog rada na projektima sa ostalim polaznicima (kolegama). Nemanja je sa svojim
+    kolegama polaznicima bio deo tima koji je izvršio intervju sa klijentom, definisao zahteve klijenta koji su potom pretočeni u zadatke i rezultirali konačnim završenim projektima. Urađen su dva projekta : <br>
+    - Kafeterija Free <br>
+    - Oilyata <br>
+    Pored osnovnih tehničkih veština, Nemanja je pokazao razumevanje i primenu takozvanih soft veština. Meni kao predavaču je bilo veoma prijatno da radim sa Nemanjom kao sa svojim budućim kolegom. Takođe mi je veoma drago
+    što Nemanja nije stao sa učenjem po završenom predavanju već je posle završenog kursa nastavio samostalno da uči i
+    stvara. </p>
+
+    <p id="recommendationParagraphThree">Zbog svega navedenog najiskrenije preporučujem Nemanju za radno mesto u Vašoj kompaniji.  Ukoliko imate bilo kakva dodatna pitanja, molim Vas pišite mi na email : </p>
+    <span id="nesto"><a href="mailto: milan.josipovic@protonmail.com">milan.josipovic@protonmail.com.</a></span>
+    <p id="recommendationParagraphFour"> Tako đeme ožete kontaktirati i putem telefona :<p><span>+381613255052.</span>
+    <p id="recommendationParagraphFive">Želim Vam svako dobro</p>
+    <p>Milan Josipović</p>
    </div>
   </div>
   <div class="copyright">
@@ -167,7 +182,14 @@ var dataReload = document.querySelectorAll("[data-reload]")
      contactTitle: "Contact :",
      experiencesTitle: "Experiences :",
      experiencesSubtitle: "AOI VISCOM OPERATOR",
-     experiencesDescription: "Automated optical electronics control, development of electronics control programs, program optimization. "
+     experiencesDescription: "Automated optical electronics control, development of electronics control programs, program optimization. ",
+     recommendationTitle : "Recommendation",
+     recommendationPerson: "Milan Josipovic - Fullstack developer",
+     recommendationParagraphOne: "Nemanja Djordjevic successfully completed a course called Web Basics for Beginners, organized by Regional Innovation StartUp Center from Uzice.The course included introducing students to the basic technologies: HTML, CSS and Javascript, as well as accompanying technologies: Bootstrap, Git, site hosting and practical work on projects with real clients.The goal was for participants to gain realistic hands- on experiences with theoretical support.", 
+     recommendationParagraphTwo: "Nemanja showed initiative and stood out during the joint work on projects with other participants (colleagues). Nemanja is with her to fellow participants was part of the team that conducted an interview with the client, defined the client's requirements which were then translated into assignments and resulted in final completed projects. Two projects have been done: Cafeteria Free, Oilyata.  In addition to basic technical skills, Nemanja showed understanding and application of so- called soft skills.As a lecturer, it was very pleasant for me to work with Nemanja as with my future colleague.I am also very gladthat Nemanja did not stop learning after finishing the lecture, but after finishing the course he continued to study independently and creates. " ,
+     recommendationParagraphThree: "Due to all the above, I sincerely recommend Nemanja for a job in your company. If you have any additional questions, please email me: ",
+     recommendationParagraphFour:"You can also contact us by phone: ",
+     recommendationParagraphFive: "I wish you all the best "
    },
    srb:{
     myName: "Pozdrav, ja sam Nemanja",
@@ -188,7 +210,14 @@ var dataReload = document.querySelectorAll("[data-reload]")
     contactTitle: "Kontakt :",
     experiencesTitle: "Iskustvo :",
     experiencesSubtitle: "AOI VISCOM OPERATER",
-    experiencesDescription: "Automacka opticka kontrola elektronike, izrada programa za kontrolu elektronike, optimizacija programa."
+    experiencesDescription: "Automacka opticka kontrola elektronike, izrada programa za kontrolu elektronike, optimizacija programa.",
+    recommendationTitle: "Preporuka",
+    recommendationPerson: "Milan Josipovic - Fullstack programer",
+    recommendationParagraphOne: "Nemanja Đorđević je uspešno završio kurs pod nazivom Osnove Web-a za Početnike koji je organizovan od strane Regionalnog Inovacionog StartUp Centra iz Užica.Kurs je obuhvatao upoznavanje polaznika sa osnovnim tehnologijama: HTML, CSS i Javascript, kao i pratećim tehnologijama: Bootstrap, Git, host- ovanje sajta i praktičan rad na projektima sa stvarnim klijentima.Cilj je bio da polaznici steknu realna hands- on iskustva uz teoretsku podršku. ",
+    recommendationParagraphTwo: "Nemanja je pokazao inicijativu i istakao se tokom zajedničkog rada na projektima sa ostalim polaznicima (kolegama). Nemanja je sa svojim kolegama polaznicima bio deo tima koji je izvršio intervju sa klijentom, definisao zahteve klijenta koji su potom pretočeni u zadatke i rezultirali konačnim završenim projektima.Urađen su dva projekta: - Kafeterija Free - Oilyata   Pored osnovnih tehničkih veština, Nemanja je pokazao razumevanje i primenu takozvanih soft veština. Meni kao predavaču je bilo veoma prijatno da radim sa Nemanjom kao sa svojim budućim kolegom. Takođe mi je veoma drago što Nemanja nije stao sa učenjem po završenom predavanju već je posle završenog kursa nastavio samostalno da uči i stvara. ",
+    recommendationParagraphThree: "Zbog svega navedenog najiskrenije preporučujem Nemanju za radno mesto u Vašoj kompaniji.  Ukoliko imate bilo kakva dodatna pitanja, molim Vas pišite mi na email : ",
+    recommendationParagraphFour: "Tako đeme ožete kontaktirati i putem telefona: ",
+    recommendationParagraphFive: "Želim Vam svako dobro "
    }
  }
 //  definisanje jezika 
@@ -213,6 +242,13 @@ if(window.location.hash){
     titleSix.textContent = lanugage.eng.experiencesTitle
     subtitleFive.textContent = lanugage.eng.experiencesSubtitle
     exDescription.textContent = lanugage.eng.experiencesDescription
+    recommendationTitle.textContent = lanugage.eng.recommendationTitle,
+    recommendationPerson.textContent = lanugage.eng.recommendationPerson
+    recommendationParagraphOne.textContent = lanugage.eng.recommendationParagraphOne
+    recommendationParagraphTwo.textContent = lanugage.eng.recommendationParagraphTwo
+    recommendationParagraphThree.textContent = lanugage.eng.recommendationParagraphThree
+    recommendationParagraphFour.textContent = lanugage.eng.recommendationParagraphFour
+   recommendationParagraphFive.textContent = lanugage.eng.recommendationParagraphFive
   }
 }
 
