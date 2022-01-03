@@ -64,7 +64,7 @@ h5 {
 .education,
 .experiences,
 .recommendation {
-  background: #2176ff;
+  background: #830083;
   padding: 1rem 2rem;
   display: grid;
   color: white;
@@ -117,23 +117,12 @@ h5 {
   place-items: space-between;
 }
 
-.html > span {
-  display: block;
-  max-width: 75%;
-  height: 100%;
-  background: #fdca40;
-}
-.css > span {
-  display: block;
-  max-width: 60%;
-  height: 100%;
-  background: #fdca40;
-}
+.html > span,
+.css > span,
 .js > span {
   display: block;
-  max-width: 50%;
   height: 100%;
-  background: #fdca40;
+  background: #dd8f00;
 }
 
 /* end of skill */

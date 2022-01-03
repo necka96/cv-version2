@@ -28,23 +28,23 @@
       <div class="html-holder">
         <div class="skill">
           <h4>HTML</h4>
-          <h5>75%</h5>
+          <h5 id="numOne"></h5>
         </div>
-        <div class="html"><span></span></div>
+        <div class="html"><span id="html"></span></div>
       </div>
       <div class="css-holder">
         <div class="skill">
           <h4>CSS</h4>
-          <h5>60%</h5>
+          <h5 id="numTwo"></h5>
         </div>
-        <div class="css"><span></span></div>
+        <div class="css"><span id="css"></span></div>
       </div>
       <div class="js-holder">
         <div class="skill">
           <h4>JS</h4>
-          <h5>50%</h5>
+          <h5 id="numThree"></h5>
         </div>
-        <div class="js"><span></span></div>
+        <div class="js"><span id="js"></span></div>
       </div>
     </div>
     <!-- end of skills -->
@@ -146,6 +146,66 @@
 <script src="./particles.min.js"></script>
  <script src="https://kit.fontawesome.com/327342e6e1.js" crossorigin="anonymous"></script>
 <script>
+  // progres
+  let numberOne = document.getElementById("numOne")
+  let numberTwo = document.getElementById("numTwo")
+  let numberThree = document.getElementById("numThree")
+  let i = 0
+ 
+ function move() {
+    if (i == 0) {
+      i = 1;
+      var elemOne = document.getElementById("html");
+      var elemTwo = document.getElementById("css");
+      var elemThree = document.getElementById("js");
+      var width = 0;
+      var idThree = setInterval(numThree, 10);
+      var idTwo = setInterval(numTwo, 10);
+      var idOne = setInterval(numOne, 10);
+      
+      
+      function numOne() {
+        if (width >= 75) {
+          clearInterval(idOne);
+          i = 0;
+          console.log(width);
+        } else {
+          width++;
+          elemOne.style.width = width + "%";
+          numberOne.innerHTML = width + "%";
+        }
+      }
+       function numTwo() {
+         width--
+        if (width >= 60) {
+          clearInterval(idTwo);
+          i = 0;
+          console.log(width);
+        } else {
+          width++;
+          elemTwo.style.width = width + "%";
+          numberTwo.innerHTML = width + "%";
+        }
+      }
+      function numThree() {
+        width--
+        if (width >= 50) {
+          clearInterval(idThree)
+          console.log(width);
+          ;
+        } else {
+          width++
+          elemThree.style.width = width + "%"
+          numberThree.innerHTML = width + "%"
+        }
+      }
+    
+    }
+    
+  }  ;
+move()
+
+ 
   // canvas
   window.onload = function () {
       Particles.init({
